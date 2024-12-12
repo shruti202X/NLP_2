@@ -31,3 +31,21 @@ Press Esc to ensure you're not in insert mode.
 Type :wq (stands for write and quit).
 
 Press Enter
+
+# To untrack files
+
+git reset <file_names>
+
+# To undo last commit
+
+git reset --soft HEAD~1
+
+# to remove commits made to local but not to remote repository
+
+git rebase -i <commit_hash>
+
+change pick to drop
+
+Esc
+
+Enter
